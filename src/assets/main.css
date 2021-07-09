@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #34c498;
+  color: #fff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.btn-small {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #34c498;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  width: 120px !important;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between !important;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #34c498;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+}
+.btn:hover {
+  background-color: #299c79;
+}
+
+.form-ask {
+  font-size: 14px;
+  color: #b3b3b3;
+  text-align: center;
+}
+.form-ask a {
+  text-decoration: none;
+  color: #34c498;
+  font-weight: 600;
+}
+
+.form-title {
+  color: #34c498;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error {
+  color: salmon;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pill {
+  display: inline-block;
+  min-width: 160px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 30px;
+  color: #523a7e;
+  background: #e6e0f1;
+  font-weight: 400;
+}
+
+.light-color {
+  background-color: #f3f9ff !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 70px 1fr 140px;
+}
+
+.container {
+  width: 55vw;
+  height: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 25px 50px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 !important;
+}
+.container .welcome {
+  height: 100%;
+}
+.container .welcome-title {
+  color: #47326d;
+  font-size: 40px;
+  margin: 20px;
+}
+.container .welcome-greeting {
+  flex-basis: 50%;
+  height: 100%;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px 0 0 10px;
+}
+.container .welcome-greeting .greeting-icon {
+  font-size: 35px;
+  background-color: #2fb088;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.container .welcome-content {
+  flex-basis: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .welcome-content-text {
+  margin: 0 20px;
+  color: #636363;
+  line-height: 1.6;
+  font-size: 20px;
+}
+.container .welcome-content .welcome-form {
+  width: 80%;
+}
+.container .welcome-content .welcome-form .form-group {
+  width: 100%;
+  margin: 0 auto 30px;
+  position: relative;
+}
+.container .welcome-content .welcome-form .form-group .icon {
+  position: absolute;
+  color: #bfb8cc;
+  bottom: 14px;
+  font-size: 22px;
+  left: 10px;
+}
+.container .welcome-content .welcome-form .form-group .show-pass {
+  position: absolute;
+  color: #bfb8cc;
+  bottom: 14px;
+  font-size: 22px;
+  right: 10px;
+  cursor: pointer;
+}
+.container .welcome-content .welcome-form .form-group input {
+  width: 100%;
+  border: none;
+  padding: 12px 40px;
+  outline: none;
+  font-size: 18px;
+  color: #999;
+  transition: all 0.3s ease;
+}
+.container .welcome-content .welcome-form .form-group input::placeholder {
+  font-size: 16px;
+  color: #bfb8cc;
+  font-weight: 600;
+}
+.container .welcome-content .welcome-form .form-group input:focus {
+  background-color: #f9f9f9;
+}
+.container .welcome-content .welcome-form .form-group input:focus + .underline .underline-bar {
+  width: 100%;
+}
+.container .welcome-content .welcome-form .form-group .underline {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(158, 190, 188, 0.3);
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.container .welcome-content .welcome-form .form-group .underline .underline-bar {
+  position: inherit;
+  height: 100%;
+  width: 0;
+  background-color: #34c498;
+  transition: width 0.3s ease;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .signout-wrapper {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: #f9f9f9;
+  border-radius: 10px 10px 0 0;
+  height: 70px;
+}
+.container .signout-wrapper-inner p {
+  margin-bottom: 10px;
+  color: #a1a1a1;
+  font-weight: 500;
+}
+.container .signout-wrapper-inner p:last-child {
+  margin-bottom: 0;
+}
+.container .signout-wrapper-inner p .nav-name {
+  text-transform: capitalize;
+}
+.container .signout-wrapper .btn-small {
+  margin-bottom: 0 !important;
+}
+
+/*# sourceMappingURL=main.css.map */
